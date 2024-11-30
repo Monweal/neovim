@@ -1,5 +1,6 @@
 vim.g.mapleader = " "
 vim.keymap.set('n', '<C-S>', ':w<CR>')
+vim.keymap.set('n', '<C-Q>', ':qa!<CR>')
 
 -- NeoTree
 vim.keymap.set('n', '<leader>e', ':Neotree toggle focus<CR>')
