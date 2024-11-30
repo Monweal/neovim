@@ -48,4 +48,6 @@ require("lazy").setup({
 
   { 'williamboman/mason.nvim', build = ':MasonUpdate' },
   { 'nvim-telescope/telescope.nvim', tag = '0.1.8' },
+  { 'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons' },
+  { 'lewis6991/gitsigns.nvim' },
 })
