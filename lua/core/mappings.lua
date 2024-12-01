@@ -14,3 +14,6 @@ vim.keymap.set('n', 'gR', vim.lsp.buf.rename, opts)
 
 -- LSP ansiblels
 vim.keymap.set('n', 'ma', ':set filetype=yaml.ansible<CR>')
+
+-- ToggleTerm
+vim.keymap.set('n', '<F7>', ':ToggleTerm<CR>')
