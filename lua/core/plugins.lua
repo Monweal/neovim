@@ -52,4 +52,5 @@ require("lazy").setup({
   { 'lewis6991/gitsigns.nvim' },
   { 'windwp/nvim-autopairs', event = "InsertEnter", config = true },
   { 'numToStr/Comment.nvim' },
+  { 'hadronized/hop.nvim' },
 })
