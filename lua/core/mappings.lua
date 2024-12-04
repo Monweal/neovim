@@ -17,3 +17,9 @@ vim.keymap.set('n', 'ma', ':set filetype=yaml.ansible<CR>', {desc = "Make ansibl
 
 -- ToggleTerm
 vim.keymap.set('n', '<F7>', ':ToggleTerm<CR>')
+
+-- Buffers
+vim.keymap.set('n', '<leader>bo', ':%bd|e#|bd#<CR>', {desc = "Close other buffers"})
+vim.keymap.set('n', '<leader>bc', ':bd<CR>', {desc = "Close current buffer"})
+vim.keymap.set('n', '<Tab>', ':bnext<CR>', {desc = "Next buffer"})
+vim.keymap.set('n', '<S-Tab>', ':bprevious<CR>', {desc = "Previous buffer"})

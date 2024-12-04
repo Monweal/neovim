@@ -47,7 +47,8 @@ require("lazy").setup({
   { 'hrsh7th/vim-vsnip' },
 
   { 'williamboman/mason.nvim', build = ':MasonUpdate' },
-  { 'nvim-telescope/telescope.nvim', tag = '0.1.8' },
+  { 'nvim-telescope/telescope.nvim' },
+  { 'nvim-telescope/telescope-fzf-native.nvim', build = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release' },
   { 'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons' },
   { 'lewis6991/gitsigns.nvim' },
   { 'windwp/nvim-autopairs', event = "InsertEnter", config = true },
@@ -92,4 +93,5 @@ require("lazy").setup({
         },
       },
     },
+    { 's1n7ax/nvim-search-and-replace' },
 })
