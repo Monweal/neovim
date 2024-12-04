@@ -3,7 +3,7 @@ vim.keymap.set('n', '<C-S>', ':w<CR>')
 vim.keymap.set('n', '<C-Q>', ':qa!<CR>')
 
 -- NeoTree
-vim.keymap.set('n', '<leader>e', ':Neotree toggle focus<CR>')
+vim.keymap.set('n', '<leader>e', ':Neotree left toggle focus<CR>')
 
 -- LSP clangd
 vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, {desc = "Go to declaration"})
