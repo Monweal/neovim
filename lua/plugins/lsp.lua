@@ -9,3 +9,6 @@ lspconfig.clangd.setup {
 
 lspconfig.ansiblels.setup {
 }
+
+lspconfig.cmake.setup {
+}
