@@ -12,3 +12,6 @@ lspconfig.ansiblels.setup {
 
 lspconfig.cmake.setup {
 }
+
+require'lspconfig'.bashls.setup{
+}
