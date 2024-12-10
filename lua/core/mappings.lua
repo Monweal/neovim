@@ -14,6 +14,8 @@ vim.keymap.set('n', 'gR', vim.lsp.buf.rename, {desc = "Rename"})
 
 -- LSP ansiblels
 vim.keymap.set('n', 'ma', ':set filetype=yaml.ansible<CR>', {desc = "Make ansible filetype"})
+vim.keymap.set('n', 'ms', ':set filetype=sh<CR>', {desc = "Make sh filetype"})
+vim.keymap.set('n', 'mb', ':set filetype=bash<CR>', {desc = "Make bash filetype"})
 
 -- ToggleTerm
 vim.keymap.set('n', '<F7>', ':ToggleTerm<CR>')
