@@ -1,5 +1,13 @@
 local lspconfig = require('lspconfig')
 
+vim.diagnostic.config({
+  virtual_text = true,
+  signs = true,
+  update_in_insert = false,
+  underline = true,
+  severity_sort = true,
+})
+
 lspconfig.clangd.setup {
   -- Server-specific settings. See `:help lspconfig-setup`
   settings = {
