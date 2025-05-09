@@ -47,6 +47,7 @@ require("lazy").setup({
   { 'hrsh7th/vim-vsnip' },
 
   { 'williamboman/mason.nvim', build = ':MasonUpdate' },
+  { 'WhoIsSethDaniel/mason-tool-installer.nvim' },
   { 'nvim-telescope/telescope.nvim' },
   { 'nvim-telescope/telescope-fzf-native.nvim', build = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release' },
   { 'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons' },
