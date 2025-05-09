@@ -5,6 +5,11 @@ vim.keymap.set('n', '<C-Q>', ':qa!<CR>')
 -- NeoTree
 vim.keymap.set('n', '<leader>e', ':Neotree left toggle focus<CR>')
 
+-- LSP Diagnostics
+vim.keymap.set("n", "gl", function()
+  vim.diagnostic.open_float({ focusable = false })
+end, {desc = "Diagnostic float"})
+
 -- LSP clangd
 vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, {desc = "Go to declaration"})
 vim.keymap.set('n', 'gd', vim.lsp.buf.definition, {desc = "Go to definition"})
@@ -27,3 +32,6 @@ vim.keymap.set('n', '<leader>bo', ':%bd|e#|bd#<CR>', {desc = "Close other buffer
 vim.keymap.set('n', '<leader>bc', ':bd<CR>', {desc = "Close current buffer"})
 vim.keymap.set('n', '<Tab>', ':bnext<CR>', {desc = "Next buffer"})
 vim.keymap.set('n', '<S-Tab>', ':bprevious<CR>', {desc = "Previous buffer"})
+
+-- Telescope diagnostics
+vim.keymap.set("n", "<leader>dd", "<cmd>Telescope diagnostics<cr>")

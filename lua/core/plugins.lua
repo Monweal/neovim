@@ -94,4 +94,7 @@ require("lazy").setup({
       },
     },
     { 's1n7ax/nvim-search-and-replace' },
+    { 'nvimtools/none-ls.nvim',
+        dependencies = {"nvimtools/none-ls-extras.nvim"},
+    },
 })
