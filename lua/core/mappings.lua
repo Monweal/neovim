@@ -23,6 +23,7 @@ vim.keymap.set('n', 'ms', ':set filetype=sh<CR>', {desc = "Make sh filetype"})
 vim.keymap.set('n', 'mb', ':set filetype=bash<CR>', {desc = "Make bash filetype"})
 vim.keymap.set('n', 'mdc', ':set filetype=yaml.docker-compose<CR>', {desc = "Make docker-compose filetype"})
 vim.keymap.set('n', 'mdf', ':set filetype=dockerfile<CR>', {desc = "Make Dockerfile filetype"})
+vim.keymap.set('n', 'mp', ':set filetype=python<CR>', {desc = "Make Python filetype"})
 
 -- ToggleTerm
 vim.keymap.set('n', '<F7>', ':ToggleTerm<CR>')
