@@ -1,5 +1,3 @@
-local lspconfig = require('lspconfig')
-
 vim.diagnostic.config({
   virtual_text = false,
   signs = true,
@@ -8,27 +6,9 @@ vim.diagnostic.config({
   severity_sort = true,
 })
 
-lspconfig.clangd.setup {
-  -- Server-specific settings. See `:help lspconfig-setup`
-  settings = {
-    ['clangd'] = {},
-  },
-}
-
-lspconfig.ansiblels.setup {
-}
-
-lspconfig.cmake.setup {
-}
-
-require'lspconfig'.bashls.setup{
-}
-
-require'lspconfig'.docker_compose_language_service.setup{
-}
-
-require'lspconfig'.dockerls.setup{
-}
-
-require'lspconfig'.pylsp.setup{
-}
+vim.lsp.enable('ansiblels')
+vim.lsp.enable('bashls')
+vim.lsp.enable('cmake')
+vim.lsp.enable('clangd')
+vim.lsp.enable('docker_language_server')
+vim.lsp.enable('pylsp')
